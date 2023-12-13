@@ -66,6 +66,26 @@ a{
     color: var(--text-icon-color)
 }
 
+.list-playlist{
+    margin-bottom: 1rem;
+}
+
+#playlist h3{
+    padding: 0 1rem;
+}
+
+.playlist-element{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.playlist-element figure{
+    width: calc(50% - 10px);
+    margin: 10px auto;
+    text-align: center;
+}
+
 #playlist li{
     padding: 10px;
 }
