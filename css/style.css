@@ -8,6 +8,7 @@
     /* dimension */
     --play-bar-height: 150px;
     --option-width-initial: 80px;
+    --upgrade-height: 100px;
 }
 
 /* RESET */
@@ -62,17 +63,38 @@ a{
 #playlist{
     height: calc(100vh - var(--play-bar-height));
     flex-grow: 1;
+    color: var(--text-icon-color)
+}
+
+#playlist li{
+    padding: 10px;
+}
+
+#playlist ul{
+    text-align: center;
 }
 
 #option{
     width: var(--option-width-initial) ;
     background-color: var(--third--color);
+    flex-grow: 0;
 }
 
 #upgrade{
-    height: 100px;
+    height: var(--upgrade-height);
     background-color: rgba(0, 0, 0, 0.3);
+    text-align: end;
 }
+
+#upgrade button{
+    padding: 10px;
+    background-color: inherit;
+    color: white;
+    border-radius: 25px;
+    border-color: white;
+    margin: 20px;
+}
+
 /* FOOTER */
 #play-bar{
     background-color: var(--primary-color);
