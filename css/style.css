@@ -1,0 +1,87 @@
+/* ROOTS */
+:root{
+    /* colors */
+    --primary-color: #282828;
+    --second-color: #141922;
+    --third--color: #000000;
+    --text-icon-color: white;
+    /* dimension */
+    --play-bar-height: 150px;
+    --option-width-initial: 80px;
+}
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--second-color);
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* UTILITY */
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* DEBUG */
+
+.debug{
+    border: 1px dashed red;
+    padding: 5px;
+}
+
+/* MAIN */
+#main{
+    display: flex;
+}
+
+#playlist{
+    height: calc(100vh - var(--play-bar-height));
+    flex-grow: 1;
+}
+
+#option{
+    width: var(--option-width-initial) ;
+    background-color: var(--third--color);
+}
+
+#upgrade{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* FOOTER */
+#play-bar{
+    background-color: var(--primary-color);
+    height: var(--play-bar-height);
+}
+
+/* RESPONSIVE */
+@media all and (min-width: 768px) {
+    :root{
+        --option-width-initial: 250px;
+    }
+}
