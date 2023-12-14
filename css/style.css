@@ -161,6 +161,32 @@ span{
     color: var(--text-icon-color);
 }
 
+.song{
+    display: flex;
+}
+
+.song .wish-folder{
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#play-bar span{
+    padding: 0;
+}
+
+#play-bar .progress-play i{
+    padding: 0 5px;
+}
+
+.progress-bar{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 2px;
+    background-color: lightgray;
+}
+
 /* RESPONSIVE */
 @media all and (min-width: 768px) {
     :root{
