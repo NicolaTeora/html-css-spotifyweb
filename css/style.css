@@ -67,6 +67,11 @@ a{
     color: var(--text-icon-color);
     overflow: auto;
 }
+
+.popular-artist{
+    border-radius: 50%;
+}
+
 /* div upgrade */
 #upgrade{
     height: var(--upgrade-height);
@@ -120,13 +125,25 @@ span{
 
 #option{
     width: var(--option-width-initial) ;
+    padding: 5px;
     background-color: var(--third--color);
+    display: flex;
+    flex-direction: column;
     flex-grow: 0;
 }
 
 .logo-optn{
     padding: 0 5px;
     margin-top: 10px;
+}
+
+.profile{
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+.bottom-option{
+    margin-top: auto;
 }
 
 /* FOOTER */
