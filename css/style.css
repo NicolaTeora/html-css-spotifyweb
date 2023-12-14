@@ -7,7 +7,7 @@
     --text-icon-color: white;
     /* dimension */
     --play-bar-height: 100px;
-    --option-width-initial: 80px;
+    --option-width-initial: 150px;
     --upgrade-height: 100px;
 }
 
@@ -60,10 +60,27 @@ a{
     display: flex;
 }
 
+/* section playlist */
 #playlist{
     height: calc(100vh - var(--play-bar-height));
     flex-grow: 1;
-    color: var(--text-icon-color)
+    color: var(--text-icon-color);
+    overflow: auto;
+}
+/* div upgrade */
+#upgrade{
+    height: var(--upgrade-height);
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: end;
+}
+
+#upgrade button{
+    padding: 10px 35px;
+    background-color: inherit;
+    color: white;
+    border-radius: 25px;
+    border-color: white;
+    margin: 20px;
 }
 
 .list-playlist{
@@ -99,31 +116,25 @@ span{
     text-align: center;
 }
 
+/* section option */
+
 #option{
     width: var(--option-width-initial) ;
     background-color: var(--third--color);
     flex-grow: 0;
 }
 
-#upgrade{
-    height: var(--upgrade-height);
-    background-color: rgba(0, 0, 0, 0.3);
-    text-align: end;
-}
-
-#upgrade button{
-    padding: 10px 35px;
-    background-color: inherit;
-    color: white;
-    border-radius: 25px;
-    border-color: white;
-    margin: 20px;
+.logo-optn{
+    padding: 0 5px;
+    margin-top: 10px;
 }
 
 /* FOOTER */
 #play-bar{
+    height: var(--play-bar-height);    
+    position: sticky;
+    bottom: 0;
     background-color: var(--primary-color);
-    height: var(--play-bar-height);
 }
 
 /* RESPONSIVE */
@@ -131,4 +142,9 @@ span{
     :root{
         --option-width-initial: 250px;
     }
+    
+    .logo-optn{
+        padding: 10px 10px 0 10px;
+    }
+    
 }
