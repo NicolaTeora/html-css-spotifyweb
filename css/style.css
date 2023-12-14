@@ -134,9 +134,19 @@ span{
     flex-grow: 0;
 }
 
+.logo-big{
+    display: none;
+}
+
 .logo-optn{
+    display: flex;
+    align-items: center;
     padding: 0 5px;
     margin-top: 10px;
+}
+
+.selection-opt{
+    display: none;
 }
 
 .profile{
@@ -144,6 +154,7 @@ span{
     background-color: darkgray;
 }
 
+/* bottom elements */
 .bottom-option{
     margin-top: auto;
 }
@@ -165,6 +176,10 @@ span{
     display: flex;
 }
 
+.song .in-play figcaption{
+    
+}
+
 .song .wish-folder{
     margin: 0 15px;
     display: flex;
@@ -180,6 +195,19 @@ span{
     padding: 0 5px;
 }
 
+.volume{
+    display: flex;
+}
+
+.volume .progress-bar{
+    width: 50px;
+    margin: auto;
+}
+
+#play-bar .volume i{
+    padding: 0 5px;
+}
+
 .progress-bar{
     width: 100%;
     margin-top: 1rem;
@@ -187,14 +215,39 @@ span{
     background-color: lightgray;
 }
 
-/* RESPONSIVE */
+  /* ********** */
+ /* RESPONSIVE */
+/* ********** */
 @media all and (min-width: 768px) {
     :root{
-        --option-width-initial: 250px;
+        --option-width-initial: 550px;
     }
     
+    /* option bar */
     .logo-optn{
+        width: 50%;
         padding: 10px 10px 0 10px;
     }
+
+    .selection-opt{
+        display: block;
+        width: 100%;
+        color: var(--text-icon-color);
+    }
     
+    .logo-optn img{
+        width: 50%;
+    }
+    
+    .l-big{
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .logo-big{
+        display: block;
+    }
+    .logo-small{
+        display: none;
+    }
 }
