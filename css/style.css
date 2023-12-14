@@ -77,6 +77,8 @@ a{
     height: var(--upgrade-height);
     background-color: rgba(0, 0, 0, 0.3);
     text-align: end;
+    position: sticky;
+    top: 0;
 }
 
 #upgrade button{
@@ -148,10 +150,15 @@ span{
 
 /* FOOTER */
 #play-bar{
-    height: var(--play-bar-height);    
+    height: var(--play-bar-height);
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
     position: sticky;
     bottom: 0;
     background-color: var(--primary-color);
+    color: var(--text-icon-color);
 }
 
 /* RESPONSIVE */
