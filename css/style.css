@@ -118,6 +118,11 @@ span{
 
 #playlist li{
     padding: 10px;
+    opacity: 0.5;
+}
+
+#playlist li:hover{
+    opacity: 1;
 }
 
 #playlist ul{
