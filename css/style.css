@@ -271,7 +271,6 @@ span{
         width: 100%;
     }
 
-
     .library li{
         display: block;
         font-size: small;
@@ -289,5 +288,18 @@ span{
 
     .logo-small{
         display: none;
+    }
+
+    /* bottom elements */
+    .bottom-option{
+        border-bottom: 2px solid lightgray;
+    }
+}
+/* RESPONSIVE MD */
+@media all and (min-width: 768px) {
+    .playlist-element figure {
+        width: calc(100% / 4 - 10px);
+        margin: 10px 5px;
+        text-align: center;
     }
 }
