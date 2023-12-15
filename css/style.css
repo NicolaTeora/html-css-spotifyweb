@@ -299,7 +299,24 @@ span{
 @media all and (min-width: 768px) {
     .playlist-element figure {
         width: calc(100% / 4 - 10px);
-        margin: 10px 5px;
+        margin: 20px 5px;
         text-align: center;
+    }
+}
+
+/* RESPONSIVE LG */
+@media all and (min-width: 992px) {
+    .playlist-element figure {
+        width: calc(100% / 6 - 10px);
+        margin: 20px 5px;
+        text-align: center;
+    }
+
+    .logo-optn img {
+        width: 30%;
+    }
+
+    .l-big{
+        width: 50%;
     }
 }
