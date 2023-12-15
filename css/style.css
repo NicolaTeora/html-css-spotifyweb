@@ -8,7 +8,7 @@
     /* dimension */
     --play-bar-height: 100px;
     --option-width-initial: 150px;
-    --upgrade-height: 100px;
+    --upgrade-height: 80px;
 }
 
 /* RESET */
@@ -183,8 +183,8 @@ span{
     display: flex;
 }
 
-.song .in-play figcaption{
-    
+.play-on{
+    width: 50px;
 }
 
 .song .wish-folder{
@@ -225,15 +225,23 @@ span{
   /* ********** */
  /* RESPONSIVE */
 /* ********** */
-@media all and (min-width: 768px) {
+@media all and (min-width: 576px) {
     :root{
         --option-width-initial: 550px;
     }
 
+    a{
+        font-size: smaller;
+        opacity: 0.5;
+    }
+
+    a:hover{
+        opacity: 1;
+    };
+
     /* playlist div */
     #playlist ul{
-        text-align: center;
-        width: calc(100% / 2);
+        padding: 0 25px;
         margin: auto;
     }
     
@@ -271,7 +279,9 @@ span{
 
     .logo-big{
         display: block;
+        min-width: 100%;
     }
+
     .logo-small{
         display: none;
     }
