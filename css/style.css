@@ -186,6 +186,8 @@ span{
 
 .song{
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .play-on{
@@ -318,5 +320,9 @@ span{
 
     .l-big{
         width: 50%;
+    }
+
+    #play-bar .song .wish-folder i{
+        display: inline-block;
     }
 }
