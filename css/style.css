@@ -66,17 +66,25 @@ a{
     background-color: rgba(0, 0, 0, 0.3);
     text-align: end;
     position: sticky;
+    z-index: 1;
     top: 0;
 }
 
 #upgrade button{
-    padding: 10px 35px;
+    padding: 8px 33px;
     background-color: inherit;
     color: white;
     border-radius: 25px;
     border-color: white;
     margin: 20px;
 }
+
+/* hover button upgrade */
+#upgrade button:hover{
+    padding: 10px 35px;
+    cursor: pointer;
+}
+/* ------------------- */
 
 /* section playlist */
 #playlist{
@@ -85,6 +93,16 @@ a{
     color: var(--text-icon-color);
     overflow: auto;
 }
+
+/* hover img playlist */
+.playlist-element .go-play{
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+/* ------------------ */
 
 .popular-artist{
     border-radius: 50%;
@@ -114,7 +132,18 @@ span{
     width: calc(50% - 10px);
     margin: 10px auto;
     text-align: center;
+    /* hover img playlist */
+    position: relative;
 }
+
+/* hover propriety */
+.playlist-element figure:hover img{
+    opacity: 0.3;
+}
+.playlist-element figure:hover .go-play{
+    display: block;
+}
+/* -------------- */
 
 #playlist li{
     padding: 10px;
@@ -123,6 +152,7 @@ span{
 
 #playlist li:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 #playlist ul{
@@ -142,6 +172,11 @@ span{
 
 .logo-big{
     display: none;
+    opacity: 0.8;
+}
+
+.logo-big:hover{
+    opacity: 1;
 }
 
 .logo-optn{
@@ -149,6 +184,15 @@ span{
     align-items: center;
     padding: 0 5px;
     margin-top: 10px;
+}
+
+/* #option .logo-optn{
+    opacity: 0.6;
+} */
+
+#option .logo-optn:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 .selection-opt{
@@ -204,6 +248,11 @@ span{
 
 #play-bar span{
     padding: 0;
+}
+
+#play-bar span:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* progress bar play */
@@ -271,7 +320,7 @@ span{
 }
 
   /* ********** */
- /* RESPONSIVE */
+ /* RESPONSIVE ///// mobile frist */
 /* ********** */
 @media all and (min-width: 576px) {
     :root{
@@ -340,6 +389,10 @@ span{
 }
 /* RESPONSIVE MD */
 @media all and (min-width: 768px) {
+    :root{
+        --option-width-initial: 500px;
+    }
+
     .playlist-element figure {
         width: calc(100% / 4 - 10px);
         margin: 20px 5px;
@@ -354,6 +407,10 @@ span{
 
 /* RESPONSIVE LG */
 @media all and (min-width: 992px) {
+    :root{
+        --option-width-initial: 450px;
+    }
+
     .playlist-element figure {
         width: calc(100% / 6 - 10px);
         margin: 20px 5px;
