@@ -205,6 +205,23 @@ span{
     padding: 0;
 }
 
+/* progress bar play */
+.progress-play{
+    min-width: 45%;
+    text-align: center;
+}
+
+.timer{
+    padding: 10px 0;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.timer .counter{
+    font-size: x-small;
+}
+
 #play-bar .progress-play i{
     padding: 0 5px;
 }
@@ -224,7 +241,7 @@ span{
 
 .progress-bar{
     width: 100%;
-    margin-top: 1rem;
+    margin: 0 1rem;
     padding: 2px;
     background-color: lightgray;
 }
@@ -303,6 +320,12 @@ span{
         width: calc(100% / 4 - 10px);
         margin: 20px 5px;
         text-align: center;
+    }
+
+    /* FOOTER */
+    .song .wish-folder {
+        flex-direction: row;
+        gap: 10px;
     }
 }
 
