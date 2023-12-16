@@ -199,6 +199,7 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 10px;
 }
 
 #play-bar span{
@@ -242,8 +243,30 @@ span{
 .progress-bar{
     width: 100%;
     margin: 0 1rem;
-    padding: 2px;
-    background-color: lightgray;
+    height: 4px;
+    background-color: rgb(160, 151, 151);
+}
+
+.progress-bar > .in-progress{
+    width: 40%;
+    height: 100%;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+}
+
+.progress-bar:hover > .in-progress::after{
+    content: ' ';
+    position: absolute;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    transform: translate(0, -40%);
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.progress-bar:hover > .in-progress{
+    background-color: rgb(86, 204, 86);
 }
 
   /* ********** */
@@ -325,7 +348,6 @@ span{
     /* FOOTER */
     .song .wish-folder {
         flex-direction: row;
-        gap: 10px;
     }
 }
 
