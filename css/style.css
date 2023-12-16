@@ -145,6 +145,16 @@ span{
 }
 /* -------------- */
 
+.playlist-element figure .title-album{
+    font-size: large;
+    font-weight: bold;
+}
+
+.playlist-element figure .nm-artist{
+    font-size: smaller;
+    opacity: 0.6;
+}
+
 #playlist li{
     padding: 10px;
     opacity: 0.5;
@@ -244,7 +254,18 @@ span{
     flex-direction: column;
     justify-content: space-around;
     gap: 10px;
+    /* opacity: 0.6; */
 }
+
+.song .wish-folder i{
+    opacity: 0.6;
+}
+
+.song .wish-folder i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
 
 #play-bar span{
     padding: 0;
@@ -351,6 +372,7 @@ span{
     .selection-opt{
         display: block;
         width: 100%;
+        margin-left: 10px;
         color: var(--text-icon-color);
     }
     
